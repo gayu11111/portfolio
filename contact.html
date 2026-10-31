@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Gayathri R</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">Gayathri R</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1>Get In Touch</h1>
+    <p>Have an opportunity or a question? Send me a message.</p>
+
+    <div class="contact-wrap">
+
+      <div class="contact-info">
+        <h2>Contact Details</h2>
+
+        <div class="c-card">
+          <span class="c-icon">&#9993;</span>
+          <div class="c-text">
+            <h3>Email</h3>
+            <a href="mailto:gayathriraj282004@gmail.com">gayathriraj282004@gmail.com</a>
+          </div>
+          <button class="copy-btn" type="button" data-copy="gayathriraj282004@gmail.com">Copy</button>
+        </div>
+
+        <div class="c-card">
+          <span class="c-icon">in</span>
+          <div class="c-text">
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/gayathriraj02" target="_blank" rel="noopener">linkedin.com/in/gayathriraj02</a>
+          </div>
+          <button class="copy-btn" type="button" data-copy="https://linkedin.com/in/gayathriraj02">Copy</button>
+        </div>
+
+        <div class="c-card">
+          <span class="c-icon">&lt;/&gt;</span>
+          <div class="c-text">
+            <h3>GitHub</h3>
+            <a href="https://github.com/gayu11111" target="_blank" rel="noopener">github.com/gayu11111</a>
+          </div>
+          <button class="copy-btn" type="button" data-copy="https://github.com/gayu11111">Copy</button>
+        </div>
+
+        <div class="c-card">
+          <span class="c-icon">&#128205;</span>
+          <div class="c-text">
+            <h3>Location</h3>
+            <span>Chennai, Tamil Nadu</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-box">
+        <h2>Send a Message</h2>
+
+        <p class="quick-label">Quick start:</p>
+        <div class="quick">
+          <button type="button" data-text="Hi Gayathri, I would like to talk to you about a job opportunity.">Job opportunity</button>
+          <button type="button" data-text="Hi Gayathri, I would like to collaborate with you on a project.">Collaboration</button>
+          <button type="button" data-text="Hi Gayathri, I saw your portfolio and wanted to say hello.">Say hello</button>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" maxlength="500" placeholder="Write your message here..."></textarea>
+          <div class="char-count" id="msgCount"></div>
+
+          <button type="submit">Send Message</button>
+          <p id="formMsg"></p>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Gayathri R</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

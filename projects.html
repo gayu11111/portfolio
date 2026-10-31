@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Gayathri R</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">Gayathri R</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>My Projects</h1>
+
+    <div class="project-tools">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
+      <div class="search-wrap">
+        <input type="text" id="searchBox" placeholder="Search projects or skills..." aria-label="Search projects">
+      </div>
+    </div>
+
+    <p class="count" id="projectCount"></p>
+
+    <div class="grid">
+
+      <div class="project card" data-type="web">
+        <span class="type-badge">Full-Stack Web App</span>
+        <h3>Job Application Tracker</h3>
+        <p class="desc">A full-stack web app to record and manage job applications, with search, filters and status tracking (Applied, Interview, Offer, Rejected).</p>
+        <div class="t-tags"><span>Python</span><span>Flask</span><span>SQLite</span><span>SQL</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+        <div class="project-actions">
+          <button class="details-btn" type="button">Details</button>
+          <a class="gh-link" href="https://github.com/gayu11111/Job-tracker" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project card" data-type="python">
+        <span class="type-badge">Python Program</span>
+        <h3>Student Grade Calculator</h3>
+        <p class="desc">A class-based Python program that stores student marks, calculates grades, searches by name and saves records to a file.</p>
+        <div class="t-tags"><span>Python</span><span>OOP</span><span>File Handling</span></div>
+        <div class="project-actions">
+          <button class="details-btn" type="button">Details</button>
+          <a class="gh-link" href="https://github.com/gayu11111/student-grade-calculator" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project card" data-type="python">
+        <span class="type-badge">Python Program</span>
+        <h3>Contact Book Application</h3>
+        <p class="desc">A menu-driven command-line contact book to add, show and search contacts, saved to a text file.</p>
+        <div class="t-tags"><span>Python</span><span>File Handling</span><span>Error Handling</span></div>
+        <div class="project-actions">
+          <button class="details-btn" type="button">Details</button>
+          <a class="gh-link" href="https://github.com/gayu11111/contact-book-python" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="empty" id="emptyMsg">No projects match your search. Try another word or filter.</p>
+  </main>
+
+  <!-- Details popup -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
+      <span class="type-badge" id="mBadge"></span>
+      <h3 id="mTitle"></h3>
+      <p id="mDesc"></p>
+      <div class="t-tags" id="mTags"></div>
+      <a class="btn" id="mLink" href="#" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Gayathri R</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
