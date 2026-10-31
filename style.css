@@ -23,7 +23,7 @@ h2 { font-size: 1.6rem; margin: 28px 0 12px; }
 a { color: var(--primary); text-decoration: none; }
 ul { padding-left: 20px; }
 
-header { background: #fff; border-bottom: 1px solid var(--border); position: relative; }
+header { background: #fff; border-bottom: 1px solid var(--border); position: relative; z-index: 200; }
 
 .nav {
   display: flex;
